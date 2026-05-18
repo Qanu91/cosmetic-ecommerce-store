@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #d194a1 !important;
+}
+/* search */
+.search-bar {
+  width: 40%;
+  min-width: 150px;
+}
+
+.search-bar .form-control {
+  width: 100%;
+}
+/* hero section */
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 65vh;
+}
+
+.carousel-item img,
+.hero-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 270px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 260px;
+  }
+
+  .carousel-item img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* search bar */
+@media (max-width: 991px) {
+  .navbar-collapse.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar {
+    width: 100% !important;
+    max-width: 340px;
+    margin: 12px auto !important;
+    display: flex !important;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .search-bar .form-control {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .search-bar .btn {
+    white-space: nowrap;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 0;
+  }
+}
+
+/* product cards */
+.card {
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.04);
+}
+
+/* Brand Button */
+.btn-brand {
+  background-color: #e75480;
+  color: #fff;
+  border: none;
+}
+
+.btn-brand:hover {
+  background-color: #c9366a;
+  color: #fff;
+}
+
+/* Brand Outline Button (for Remove) */
+.btn-brand-outline {
+  background-color: #2d2d2d;
+  color: #fff;
+  border: none;
+}
+
+.btn-brand-outline:hover {
+  background-color: #111111;
+  color: #fff;
+}
+
+/* tablet */
+@media (max-width: 991px) {
+  .card img {
+    height: 180px;
+  }
+
+  .card-body {
+    padding: 12px;
+  }
+}
+
+/* mobile */
+@media (max-width: 576px) {
+  .card img {
+    height: 140px;
+  }
+
+  .card-body {
+    padding: 10px;
+  }
+
+  .card-title {
+    font-size: 14px;
+  }
+
+  .card-text {
+    display: none;
+  }
+
+  .card h5 {
+    font-size: 14px;
+  }
+
+  .card .btn {
+    width: 100%;
+    font-size: 12px;
+    padding: 7px 6px;
+  }
+}
